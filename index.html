@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Los Caligaris</title>
+
+    <!-- FUENTES DE GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Leckerli+One&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* CONFIGURACIÓN GENERAL */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #CCC3D1;
+            font-family: Inter, sans-serif;
+            color: #080808;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .wrap {
+            width: min(100%, 592px);
+            margin: 0 auto;
+        }
+
+        /* ENCABEZADO */
+        header {
+            height: 206px;
+            background: #65613F;
+            color: #C4D8E2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            font: 400 42px 'Leckerli One', cursive;
+            margin: 0;
+        }
+
+        /* DIVISORES */
+        .divider {
+            height: 37px;
+            background: #C1BC77;
+        }
+
+        /* INTEGRANTES */
+        .member {
+            height: 206px;
+            background: #8D8D4F;
+            display: flex;
+            align-items: center;
+            gap: 55px;
+            padding: 0 40px;
+        }
+
+        /* CUARTO INTEGRANTE */
+        .member:nth-of-type(4) {
+            height: 312px;
+            background: #C1BC77;
+        }
+
+        /* IMÁGENES DE LOS INTEGRANTES */
+        .member img {
+            width: 155px;
+            height: 164px;
+            object-fit: cover;
+        }
+
+        .member:nth-of-type(4) img {
+            width: 155px;
+            height: 164px;
+        }
+
+        /* NOMBRES DE LOS INTEGRANTES */
+        .member a.name {
+            flex: 1;
+            text-align: center;
+            font-size: 20px;
+            line-height: 1.35;
+        }
+
+        /* EFECTO AL PASAR EL CURSOR */
+        .member a:hover {
+            opacity: .8;
+        }
+
+        /* PIE DE PÁGINA */
+        .contact {
+            height: 136px;
+            background: #F7DDD5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            font-size: 20px;
+        }
+
+        .index-footer {
+            height: 136px;
+        }
+
+        /* REDES SOCIALES */
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .social img {
+            width: 58px;
+            height: 58px;
+            object-fit: contain;
+        }
+
+        /* DISEÑO RESPONSIVO PARA CELULARES */
+        @media (max-width: 520px) {
+
+            header {
+                height: 170px;
+            }
+
+            .member {
+                gap: 18px;
+                padding: 0 18px;
+                height: 170px;
+            }
+
+            .member img {
+                width: 34%;
+                height: 130px;
+            }
+
+            .member a.name {
+                font-size: 16px;
+            }
+
+            .member:nth-of-type(4) {
+                height: 210px;
+            }
+
+            .contact {
+                padding: 0 16px;
+                font-size: 16px;
+            }
+
+            .social {
+                gap: 12px;
+            }
+
+            .social img {
+                width: 42px;
+                height: 42px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="wrap">
+
+        <!-- ENCABEZADO PRINCIPAL -->
+        <header>
+            <h1>Los caligaris</h1>
+        </header>
+
+        <div class="divider"></div>
+
+        <!-- INTEGRANTE 1: SARAH -->
+        <a class="member" href="sarah.html">
+
+            <img
+                src="Imagenes/PicSarah1Inicio.png"
+                alt="Sarah Haideé"
+            >
+
+            <span class="name">
+                Sarah Haideé Núñez De La Torre
+            </span>
+
+        </a>
+
+        <div class="divider"></div>
+
+        <!-- INTEGRANTE 2: ANA DANIELA -->
+        <a class="member" href="daniela.html">
+
+            <img
+                src="Imagenes/PicDaniela2Inicio.png"
+                alt="Ana Daniela"
+            >
+
+            <span class="name">
+                Ana Daniela Elorreaga Osorio
+            </span>
+
+        </a>
+
+        <div class="divider"></div>
+
+        <!-- INTEGRANTE 3: EDUARDO -->
+        <a class="member" href="eduardo.html">
+
+            <img
+                src="Imagenes/PicUri3Inicio.png"
+                alt="Eduardo Uriel"
+            >
+
+            <span class="name">
+                Eduardo Uriel Álvarez Rodríguez
+            </span>
+
+        </a>
+
+        <div class="divider"></div>
+
+        <!-- INTEGRANTE 4: MELISSA -->
+        <a class="member" href="melissa.html">
+
+            <img
+                src="Imagenes/PicMel4Inicio.png"
+                alt="Melissa Adonai"
+            >
+
+            <span class="name">
+                Melissa Adonai Castillo López
+            </span>
+
+        </a>
+
+        <div class="divider"></div>
+
+        <!-- PIE DE PÁGINA Y CONTACTO -->
+        <footer class="contact index-footer">
+
+            <span>CONTACTO</span>
+
+            <nav class="social">
+
+                <!-- INSTAGRAM -->
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                >
+                    <img
+                        src="Imagenes/IcoInstagram.png"
+                        alt="Instagram"
+                    >
+                </a>
+
+                <!-- WHATSAPP -->
+                <a
+                    href="https://www.whatsapp.com/"
+                    target="_blank"
+                >
+                    <img
+                        src="Imagenes/IcoWhatsApp.png"
+                        alt="WhatsApp"
+                    >
+                </a>
+
+                <!-- TIKTOK -->
+                <a
+                    href="https://www.tiktok.com/"
+                    target="_blank"
+                >
+                    <img
+                        src="Imagenes/IcoTikTok.png"
+                        alt="TikTok"
+                    >
+                </a>
+
+            </nav>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>

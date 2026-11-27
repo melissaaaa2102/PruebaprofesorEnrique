@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sarah Haideé Núñez De La Torre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Leckerli+One&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* CONFIGURACIÓN GENERAL */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #CCC3D1;
+            font-family: Inter, sans-serif;
+            color: #080808;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .wrap {
+            width: min(100%, 600px);
+            margin: 0 auto;
+        }
+
+        /* ENCABEZADO */
+        header {
+            height: 52px;
+            background: #65613F;
+            color: #C4D8E2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            font: 400 27px 'Leckerli One', cursive;
+            margin: 0;
+            text-align: center;
+            padding: 0 12px;
+        }
+
+        /* DIVISORES */
+        .divider {
+            height: 18px;
+            background: #C1BC77;
+        }
+
+        /* BARRA DEL NOMBRE */
+        .namebar {
+            height: 62px;
+            background: #C1BC77;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 12px;
+            padding: 8px;
+        }
+
+        /* FOTOGRAFÍA */
+        .portrait {
+            background: #C1BC77;
+            padding: 18px 9%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .portrait img {
+            width: 100%;
+            height: 285px;
+            object-fit: cover;
+        }
+
+        /* CONTENIDO GENERAL */
+        .content {
+            background: #8D8D4F;
+            padding: 12px 18px;
+            font-size: 12px;
+            line-height: 1.28;
+        }
+
+        .content h2,
+        .skillbox h2 {
+            font: 400 17px 'Inter', sans-serif;
+            margin: 0 0 7px;
+        }
+
+        .content p {
+            margin: 0;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 18px;
+        }
+
+        /* CUADRÍCULA DE HABILIDADES */
+        .skillgrid {
+            background: #C1BC77;
+            padding: 18px 9%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skillbox {
+            background: #ddd;
+            padding: 20px 14px;
+            font-size: 12px;
+            min-height: 150px;
+        }
+
+        .skillbox ul {
+            margin-top: 14px;
+        }
+
+        /* HABILIDADES Y PROYECTOS */
+        .skills {
+            min-height: 145px;
+        }
+
+        .compact {
+            min-height: 100px;
+            font-size: 10px;
+        }
+
+        .projects {
+            min-height: 150px;
+        }
+
+        /* VIDEO */
+        #video {
+            display: block;
+        }
+
+        #video video {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+        }
+
+        /* BOTÓN PARA VOLVER */
+        .back {
+            display: block;
+            background: #C1BC77;
+            padding: 14px 18px;
+            font-size: 13px;
+        }
+
+        /* SECCIÓN CONTACTO */
+        .contact {
+            height: 62px;
+            background: #F7DDD5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 14px;
+            font-size: 13px;
+        }
+
+        /* SECCIÓN SÍGUEME EN */
+        .follow-section {
+            background: #8D8D4F;
+        }
+
+        .follow-label {
+            font-weight: 600;
+        }
+
+        /* REDES SOCIALES */
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .social img {
+            width: 29px;
+            height: 29px;
+            object-fit: contain;
+        }
+
+        /* ÍCONOS MÁS GRANDES EN SÍGUEME EN */
+        .social-follow img {
+            width: 33px;
+            height: 33px;
+        }
+
+        /* DISEÑO RESPONSIVO */
+        @media (max-width: 420px) {
+
+            .portrait img {
+                height: 230px;
+            }
+
+            .content {
+                font-size: 11px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="wrap">
+
+        <!-- ENCABEZADO -->
+        <header>
+            <h1>Sarah Haideé</h1>
+        </header>
+
+        <div class="divider"></div>
+
+        <!-- NOMBRE COMPLETO -->
+        <div class="namebar">
+            Sarah Haideé Núñez De La Torre
+        </div>
+
+        <!-- FOTOGRAFÍA -->
+        <section class="portrait">
+
+            <img
+                src="imagenes/PicSarah1Inicio.png"
+                alt="Fotografía de Sarah Haideé Núñez De La Torre"
+            >
+
+        </section>
+
+        <!-- SOBRE MÍ -->
+        <section class="content">
+
+            <h2>Sobre mí:</h2>
+
+            <p>
+                Soy estudiante de séptimo semestre de Comunicación y Medios
+                Digitales con interés en la fotografía, dirección, marketing
+                digital, edición, cine y producción audiovisual. Mi objetivo
+                es volver realidad las ideas. Disfruto mucho los procesos
+                creativos de shootings, hacer videos, rodajes y campañas
+                publicitarias. Soy una apasionada del cine, la música y el
+                arte en general. Me encanta experimentar, crear y comunicar.
+            </p>
+
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- HABILIDADES -->
+        <div class="skillgrid">
+
+            <!-- HABILIDADES TÉCNICAS -->
+            <section class="skillbox">
+
+                <h2>Habilidades:</h2>
+
+                <ul>
+                    <li>Photoshop</li>
+                    <li>After Effects</li>
+                    <li>Lightroom</li>
+                    <li>Illustrator</li>
+                    <li>Canva</li>
+                    <li>CapCut</li>
+                </ul>
+
+            </section>
+
+            <!-- HABILIDADES PERSONALES -->
+            <section class="skillbox">
+
+                <ul>
+                    <li>Liderazgo</li>
+                    <li>Organización</li>
+                    <li>Disciplina</li>
+                    <li>Proactividad</li>
+                    <li>Responsabilidad</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Adaptación</li>
+                </ul>
+
+            </section>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- PROYECTOS -->
+        <section class="content projects">
+
+            <h2>Proyectos:</h2>
+
+            <ul>
+                <li>Dirección de cortos académicos</li>
+                <li>Fotografía de shootings en estudio, exterior y conciertos</li>
+                <li>Dirección y rodaje de cortos</li>
+                <li>Colaboradora creativa</li>
+                <li>Área de mensajes creativos y contenido</li>
+                <li>Edición de clips, videos y contenido para La Bestia Radio</li>
+                <li>Grabación de videos</li>
+                <li>Manipulación digital (carteles, fotos, anuncios, etc.)</li>
+                <li>Fotografía de portadas de singles</li>
+            </ul>
+
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- VIDEO -->
+        <div id="video">
+
+            <video
+                src="imagenes/video sarah.mp4"
+                autoplay
+                loop
+                controls
+            ></video>
+
+        </div>
+
+        <!-- VOLVER AL INICIO -->
+        <a class="back" href="index.html">
+            ← Volver al inicio
+        </a>
+
+        <!-- SÍGUEME EN -->
+        <footer class="contact follow-section">
+
+            <span class="follow-label">SÍGUEME EN:</span>
+
+            <nav class="social social-follow">
+
+                <!-- INSTAGRAM PERSONAL -->
+                <a
+                    href="https://www.instagram.com/_sarrs_?knvt=MWZsZ2g5M3Z1ZWhpcw%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="Imagenes/IcoInstagram.png"
+                        alt="Instagram"
+                    >
+                </a>
+
+                <!-- WHATSAPP PERSONAL -->
+                <a
+                    href="https://wa.me/qr/GRRV7PVAVXUIA1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="Imagenes/IcoWhatsApp.png"
+                        alt="WhatsApp"
+                    >
+                </a>
+
+                <!-- TIKTOK PERSONAL -->
+                <a
+                    href="https://www.tiktok.com/@sars_haidee?_r=1&_t=ZS-9BiRXyU3Q7I"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="Imagenes/IcoTikTok.png"
+                        alt="TikTok"
+                    >
+                </a>
+
+            </nav>
+
+        </footer>
+
+        <!-- CONTACTO -->
+        <footer class="contact">
+
+            <span>CONTACTO</span>
+
+            <nav class="social">
+
+                <!-- INSTAGRAM -->
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="Imagenes/IcoInstagram.png"
+                        alt="Instagram"
+                    >
+                </a>
+
+                <!-- WHATSAPP -->
+                <a
+                    href="https://www.whatsapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="Imagenes/IcoWhatsApp.png"
+                        alt="WhatsApp"
+                    >
+                </a>
+
+                <!-- TIKTOK -->
+                <a
+                    href="https://www.tiktok.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img
+                        src="Imagenes/IcoTikTok.png"
+                        alt="TikTok"
+                    >
+                </a>
+
+            </nav>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>
